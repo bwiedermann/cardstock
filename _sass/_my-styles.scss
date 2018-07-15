@@ -1,0 +1,62 @@
+
+/******************************************************************************
+* Table of contents
+******************************************************************************/
+.toc {
+    .nav__title {
+        background-color: $info-color;
+    }
+}
+
+/******************************************************************************
+* Font awesome icons
+******************************************************************************/
+
+@mixin colorful-icons {
+    .fa-info-circle {
+        color: $info-color;
+    }
+
+    .fa-bookmark {
+        color: $danger-color;
+    }
+
+    .fa-github {
+        color: $github-color;
+    }
+
+    .fa-graduation-cap {
+        color: $schoology-color;
+    }
+}
+
+/******************************************************************************
+* Masthead
+******************************************************************************/
+
+#site-nav {
+    @include colorful-icons();
+}
+
+.masthead {
+    ul {
+        font-size: smaller;        
+    }
+}
+
+/******************************************************************************
+* Footer
+******************************************************************************/
+
+.page__footer {
+    display: none;
+}
+
+/* right-hand nav */
+
+// make it sticky
+// aside.sidebar__right {
+//     position: sticky;
+//     float: right;
+//     top: 44px;
+// }

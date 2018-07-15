@@ -1,0 +1,135 @@
+// there must be a better way to do this
+ul.clean-ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    padding: 0;
+  }
+}
+
+@mixin clean-ul {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      padding: 0
+    }
+  }
+}
+
+@mixin clean-dl {
+   dl {
+    margin: 0;
+    
+    dt {
+        //  margin-top: 10px;
+    }
+
+    dd {
+        margin-left: 0;
+        // font-style: italic;
+        // font-size: small;
+    }
+  }
+}
+
+@mixin bold-dl {
+  dl {
+   
+
+    dt {
+      font-weight: bold;
+    }
+
+    dt::after {
+      content: ":  ";
+    }
+
+    dd {
+       display: inline;
+    }
+  }
+}
+
+@mixin inline-dl {
+  dd,
+  dt{
+      display: inline;
+      margin: 0;
+  }
+  dd + dd:before {
+      content: ', '; /* add comma between definitions */
+  }
+  dt:after {
+      content: ':';
+  }
+  dt:before { /* insert line break before <dt> */
+      content:"\A";
+      white-space:pre;
+  }
+  dt:first-child:before { /* disable line break before the first <dt> */
+      content: none;
+  }  
+}
+
+@mixin clean-lists {
+   @include clean-ul;
+   @include clean-dl;
+}
+
+@mixin line-lists {
+  @include clean-ul;
+  
+  li {
+    display: inline;
+  }
+
+  li + li::before {
+    content: "\00a0\2219\00a0";
+  }
+}
+
+@mixin nested-lists {
+  @include clean-lists;
+  ul ul {
+    margin-top: 5px;
+    margin-left: 30px;
+    list-style: outside;
+
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@mixin asides {
+  p {
+    width: 72%;
+  }
+
+  ul, ol, dl {
+    position: relative;
+
+    width: 100%;
+    
+    li, dt, dd {
+      width: 72%;
+    }
+  }
+
+  aside {
+    float: right;
+    line-height: 1.3em;
+    font-size: small;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 20%;
+    clear: both;
+
+    p {
+      display: inline;
+    }
+  }
+}

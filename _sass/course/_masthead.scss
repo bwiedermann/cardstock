@@ -1,0 +1,32 @@
+div.masthead {
+    @extend %card;
+    @include line-lists;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+
+    h1 {
+        font-size: 2.3em;
+        font-weight: 700;
+
+        a {
+            color: $highlight-color;
+        }
+
+        a:hover {
+            color: $link-color;
+        }
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: #6d6d6d;
+    }
+
+    ul {
+        font-size: 1em;
+    }
+
+    
+}

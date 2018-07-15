@@ -1,0 +1,26 @@
+body {
+  background-color: $page-background;
+  font-family: $global-font-family;
+}
+
+%card {
+  @extend .z-depth-2;
+  @extend .row;
+  border: 1px solid $border-color;
+  padding: 20px;
+  margin: 20px;
+  background-color: $content-background;
+}
+
+main {
+  @extend %card;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  // text-decoration: underline;
+}
+

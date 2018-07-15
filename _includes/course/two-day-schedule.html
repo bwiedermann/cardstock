@@ -1,0 +1,77 @@
+{% assign schedule = site.data.schedule %}
+
+<table class="schedule" role="table">
+    <!-- <caption>"Schedule"</caption> -->
+    <thead role="rowgroup">
+        <tr role="row">
+            <th scope="col" role="columnheader">Week</th>
+            <!-- TODO: Dynamically determine the days -->
+            <th scope="col" role="columnheader" class="day">Tuesday</th>
+            <th scope="col" role="columnheader" class="day">Thursday</th>
+            <th scope="col" role="columnheader" class="assignment">Assignment</th>
+        </tr>
+    </thead>
+    <tbody role="rowgroup">
+        {% for week in schedule.weeks %}
+            <tr role="row" class="week">
+                <th scope="row" role="rowheader" class="week-num">({{ week.number }})</th>
+
+                {% for class in week.classes %}
+                    {% if class.holiday %}
+                        <td role="cell" class="holiday">
+                    {% else %}
+                        <td role="cell" class="day">
+                    {% endif %}
+                        <div class="day-details">
+                            <div class="date">{{ class.date }}</div>
+                            <div class="contents">
+                                    <h1>{{ class.title }}</h1>
+                                    <h2>{{ class.subtitle }}</h2>
+                                    <ul class="materials">
+                                    {% for material in class.materials %}
+                                        <li>
+                                            {% if material.link %}
+                                                <a href="{{material.link}}">
+                                            {% endif %}
+                                            {{material.title}}
+                                            {% if material.link %}
+                                                </a>
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                    </ul>                                
+                            </div>
+                        </div>
+                    </td>
+                {% endfor %}
+
+                <td role="cell" class="assignment">
+                    <dl>
+                        {% for assignment in week.assignments %}
+                            <dt>
+                                {% if assignment.url %}
+                                    <a href="{{ assignment.url }}">
+                                {% endif %}
+                                {{  assignment.title }}
+                                {% if assignment.url %}
+                                    </a>
+                                {% endif %}
+                            </dt>
+                            <dd>
+                                {% if assignment.dueDate or assignment.date %}
+                                    <span class="dueDate">
+                                        {% if assignment.dueDate %}
+                                            Due: {{ assignment.dueDate | markdownify }}
+                                        {% else %} 
+                                            {{ assignment.date | markdownify }}
+                                        {% endif %}
+                                    </span>
+                                {% endif %}
+                            </dd>
+                        {% endfor %}
+                    </dl>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
