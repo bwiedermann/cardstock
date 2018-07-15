@@ -6,6 +6,9 @@ subtitle: "and what's this course all about?"
 category: course-notes
 tags: [computation, classroom]
 ---
+
+DRAFT
+
 Amet in adipisicing veniam ut adipisicing anim veniam mollit enim.  Sint do
 dolor sit excepteur. Veniam eu proident amet irure esse officia do aute.
 Excepteur Lorem pariatur veniam veniam eiusmod deserunt cupidatat dolor proident
