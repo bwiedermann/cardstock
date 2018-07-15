@@ -14,7 +14,7 @@
     <tbody role="rowgroup">
         {% for week in schedule.weeks %}
             <tr role="row" class="week">
-                <th scope="row" role="rowheader" class="week-num">({{ week.number }})</th>
+                <th scope="row" role="rowheader" class="week-num">{{ week.number }}</th>
 
                 {% for class in week.classes %}
                     {% if class.holiday %}
