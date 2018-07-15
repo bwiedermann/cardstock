@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "Piazza"
+    url: https://www.piazza.com
+  - title: "Syllabus"
+    url: syllabus.md
+  - title: "Gradescope"
+    url: https://www.gradescope.com
+  # - title: "Tutoring hours"
+  #   url: /collection-archive/

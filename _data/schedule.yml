@@ -1,0 +1,340 @@
+weeks:
+- assignments:
+  - dueDate: "Tuesday, 9/11 at 11:59pm"
+    title: 'HW 0: Automata I'
+    # url: 'http://www.google.com'
+  classes:
+  - date: '09 / 04'
+    materials:
+       - title: 'slides'
+         link: '/slides/'
+       - title: 'notes'
+         link: '/notes/'
+    title: 'What is Computer Science?'
+    subtitle: "and what's this course all about?"
+  - date: '09 / 06'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'What is a computer?'
+    subtitle: 'Encodings, DFAs'
+  number: 0
+- assignments:
+  - dueDate: 'Tuesday, 9/18 at 11:59pm'
+    title: 'HW 1: Automata II'
+    url: null
+  classes:
+  - date: '09 / 11'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Regularity'
+    subtitle: 'Regular expressions, NFAs, proofs'
+  - date: '09 / 13'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Universality'
+    subtitle: 'Turning Machines, (un)decidability'
+  number: 1
+- assignments:
+  - dueDate: 'Tuesday, 9/25 at 11:59pm'
+    title: 'HW 2: Circuits'
+    url: null
+  classes:
+  - date: '09 / 18'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Combinational logic'
+    subtitle: 'Transistors, gates, circuits'
+  - date: '09 / 20'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Sequential logic'
+    subtitle: 'Latches, memory'
+  number: 2
+- assignments:
+  - dueDate: 'Tuesday, 10/2 at 11:59pm'
+    title: 'HW 3: Hmmm-work'
+    url: null
+  classes:
+  - date: '09 / 25'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Stored-program computer I'
+    subtitle: 'Registers, RAM, assembly'
+  - date: '09 / 27'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Stored-program computer II'
+    subtitle: 'Function calls, the Stack'
+  number: 3
+- assignments:
+  - dueDate: 'Sunday, 10/7 at 5:00pm'
+    title: 'Take-home midterm 1'
+    url: null
+  - dueDate: 'Tuesday, 10/9 at 11:59pm'
+    title: 'HW 4: '
+    url: null
+  classes:
+  - date: '10 / 02'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Functional programming'
+    subtitle: 'Racket, referential transparency'
+  - date: '10 / 04'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Recursion and induction'
+    subtitle: 'Linked lists, recurrence relations'
+  number: 4
+- assignments:
+  - dueDate: 'Tuesday, 10/16 at 11:59pm'
+    title: 'HW 5: '
+    url: null
+  classes:
+  - date: '10 / 09'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Higher-order functions'
+    subtitle: 'map, filter, reduce'
+  - date: '10 / 11'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Recursive strategies'
+    subtitle: '"Use it or lose it"'
+  number: 5
+- assignments:
+  - dueDate: 'Tuesday, 10/30 at 11:59pm'
+    title: 'HW 6: '
+    url: null
+  classes:
+  - date: '10 / 16'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Search'
+    subtitle: 'Trees, binary search trees (BSTs)'
+  - date: '10 / 18'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Universality revisited'
+    subtitle: 'Lambda calculus'
+  number: 6
+- assignments:
+  # - dueDate: ''
+  #   title: ''
+  #   url: null
+  classes:
+  - date: '10 / 23'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Fall Break'
+    subtitle: '(no classes)'
+    holiday: true
+  - date: '10 / 25'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Imperative programming'
+    subtitle: 'Python, references, namespaces'
+  number: 7
+- assignments:
+  - dueDate: 'Tuesday, 11/6 at 11:59pm'
+    title: 'HW 7: '
+    url: null
+  classes:
+  - date: '10 / 30'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Sequence processing'
+    subtitle: 'Strings, lists, summations'
+  - date: '11 / 01'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Optimization I'
+    subtitle: 'Memoization, dynamic programming'
+  number: 8
+- assignments:
+  - dueDate: 'Sunday, 11/11 at 5:00pm'
+    title: 'Take-home midterm 2'
+    url: null
+  - dueDate: 'Tuesday, 11/13 at 11:59pm'
+    title: 'HW 8: '
+    url: null
+  classes:
+  - date: '11 / 06'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Optimization II'
+    subtitle: 'Dynamic programming (continued)'
+  - date: '11 / 08'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Object-oriented Programming I'
+    subtitle: 'Objects, classes, members, constructors'
+  number: 9
+- assignments:
+  - dueDate: 'Tuesday, 11/27 at 11:59pm'
+    title: 'HW 9: '
+    url: null
+  classes:
+  - date: '11 / 13'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Object-oriented Programming II'
+    subtitle: 'Special methods, subclassesing'
+  - date: '11 / 15'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Static types'
+    subtitle: 'Java, compilers/interpreters, arrays'
+  number: 10
+- assignments:
+  # - dueDate: 'Tuesday, 12/11 at 11:59pm'
+  #   title: 'HW 11: '
+  #   url: null
+  classes:
+  - date: '11 / 20'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Sorting'
+    subtitle: 'Algorithms and performance'
+  - date: '11 / 22'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Thanksgiving'
+    subtitle: '(no classes)'
+    holiday: true,
+  number: 11
+- assignments:
+  - dueDate: 'Tuesday, 12/4 at 11:59pm'
+    title: 'HW 10: '
+    url: null
+  classes:
+  - date: '11 / 27'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Object-oriented design'
+    subtitle: 'Interfaces, subtyping'
+  - date: '11 / 29'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Graphs: Interface'
+    subtitle: 'Vertices, edges, directedness, connectivity'
+  number: 12
+- assignments:
+  - dueDate: 'Tuesday, 12/11 at 11:59pm'
+    title: 'HW 11: '
+    url: null
+  classes:
+  - date: '12 / 04'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Graphs: Implementation'
+    subtitle: 'Graph encodings, maps'
+  - date: '12 / 06'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Bonus Topics I'
+    subtitle: 'To be determined'
+  number: 13
+- assignments:
+  - date: 'Monday, 12/17 2-5pm in SHAN 3481'
+    title: 'In-classes final exam'
+    url: null
+  classes:
+  - date: '12 / 11'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Bonus Topics II'
+    subtitle: 'To be determined'
+  - date: '12 / 13'
+    materials:
+      #  - title: 'slides'
+      #    link: '/slides/'
+      #  - title: 'notes'
+      #    link: '/notes/'
+    title: 'Wrap-up'
+    subtitle: 'What is computation?'
+  number: 14
+
