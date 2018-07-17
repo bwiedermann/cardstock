@@ -1,26 +1,19 @@
 body {
-  background-color: $page-background;
-  font-family: $global-font-family;
+  @extend .container;
+  @extend .row;
+  background-color: $body-background;
+  font-family: $font-family-base;
 }
 
-%card {
-  @extend .z-depth-2;
-  @extend .row;
-  border: 1px solid $border-color;
+.raised-section {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  border: 1px solid $section-border-color;
   padding: 20px;
   margin: 20px;
-  background-color: $content-background;
+  background-color: $content-background;  
 }
 
-main {
-  @extend %card;
+main, header, section {
+  @extend .raised-section;
+  @extend .row
 }
-
-a {
-  text-decoration: underline;
-}
-
-a:hover {
-  // text-decoration: underline;
-}
-
