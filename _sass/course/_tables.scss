@@ -1,113 +1,114 @@
-/* ==========================================================================
-   TABLES
-   ========================================================================== */
+/*******************************************************************************
+ * Tables
+ *******************************************************************************/
 
-// TODO: set breakpoints for widths on responsive tables
+// TODO: set breakpoints for widths on responsive tables?
 
 table.schedule {
-  @extend .responsive-table;
+  @extend .borderless;
+  background-color: red;
 
-  margin: auto;
-  width: 100%;
-  border-spacing: 5px 15px;
-  border-collapse: separate;
+  // margin: auto;
+  // width: 100%;
+  // border-spacing: 5px 15px;
+  // border-collapse: separate;
 
-  thead {
-    font-weight: bold;
-    th {
-        text-align: center;
-    }
-    th.assignment {
-      text-align: left;
-    }
-  }
+  // thead {
+  //   font-weight: bold;
+  //   th {
+  //       text-align: center;
+  //   }
+  //   th.assignment {
+  //     text-align: left;
+  //   }
+  // }
 
-  tr.week {
-    td {
-      padding: 0;
-    }
+  // tr.week {
+  //   td {
+  //     padding: 0;
+  //   }
 
-    th.week-num {
-      width: 5%;
-      font-weight: normal;
-      text-align: center;
-    }
+  //   th.week-num {
+  //     width: 5%;
+  //     font-weight: normal;
+  //     text-align: center;
+  //   }
 
-    td.day, td.holiday {
-      border: 1px solid transparentize($highlight-color, .75);
+  //   td.day, td.holiday {
+  //     border: 1px solid transparentize($highlight-color, .75);
 
-      div.day-details {
-        display: flex;
-        align-content: stretch;
+  //     div.day-details {
+  //       display: flex;
+  //       align-content: stretch;
 
-        div.date {
-          @extend .valign-wrapper;
-          color: white;
-          background-color: $highlight-color;
-          padding: 5px 10px;
-          text-align: center;
-          font-size: small;
-          display: inline-flex;
-          flex-grow: 1;
-          max-width: 20%;
-        }
+  //       div.date {
+  //         @extend .valign-wrapper;
+  //         color: white;
+  //         background-color: $highlight-color;
+  //         padding: 5px 10px;
+  //         text-align: center;
+  //         font-size: small;
+  //         display: inline-flex;
+  //         flex-grow: 1;
+  //         max-width: 20%;
+  //       }
 
-        div.contents {
-          @include line-lists;
-          flex-grow: 1;
-          margin-left: 10px;
-          padding: 10px;
+  //       div.contents {
+  //         @include line-lists;
+  //         flex-grow: 1;
+  //         margin-left: 10px;
+  //         padding: 10px;
 
-          h1 {
-            font-size: 1em;
-            margin: 0;
-            // color: $highlight-color;
-            // font-weight: bold;
-          }
+  //         h1 {
+  //           font-size: 1em;
+  //           margin: 0;
+  //           // color: $highlight-color;
+  //           // font-weight: bold;
+  //         }
 
-          h2 {
-            font-size: .75em;
-            margin: 0;
-            color: $dark-gray;
-            font-style: italic;
-          }
+  //         h2 {
+  //           font-size: .75em;
+  //           margin: 0;
+  //           color: $dark-gray;
+  //           font-style: italic;
+  //         }
 
-          ul.materials {
-            font-size: .75em;
-            margin: 0;
-            padding-top: 5px;
-            font-style: italic;
-            min-height: 1.75em;
-          }
-        }
-      }
-    }
+  //         ul.materials {
+  //           font-size: .75em;
+  //           margin: 0;
+  //           padding-top: 5px;
+  //           font-style: italic;
+  //           min-height: 1.75em;
+  //         }
+  //       }
+  //     }
+  //   }
 
-    td.holiday {
-      filter: saturate(.1);
-    }
+  //   td.holiday {
+  //     filter: saturate(.1);
+  //   }
 
-    td.assignment {
-      @include clean-dl;
+  //   td.assignment {
+  //     @include clean-dl;
 
-      width: 25%;
-      padding-left: 1%;
+  //     width: 25%;
+  //     padding-left: 1%;
 
-      dl {
-        margin: 0;
-        dd {
-          font-size: small;
-          font-style: italic;
-          margin-bottom: 7px;
-          span.dueDate, span.date {
-            p { // the markdownified due date
-              display: inline;
-            }
-          }
-        }
-        border-left: 2px solid transparentize($highlight-color, .2);
-        padding-left: 10px;
-      }
-    }
-  }
+  //     dl {
+  //       margin: 0;
+  //       dd {
+  //         font-size: small;
+  //         font-style: italic;
+  //         margin-bottom: 7px;
+  //         span.dueDate, span.date {
+  //           p { // the markdownified due date
+  //             display: inline;
+  //           }
+  //         }
+  //       }
+  //       border-left: 2px solid transparentize($highlight-color, .2);
+  //       padding-left: 10px;
+  //     }
+  //   }
+  // }
 }
