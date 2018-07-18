@@ -5,9 +5,7 @@
 // TODO: set breakpoints for widths on responsive tables?
 
 table.schedule {
-  // @extend .borderless;
-  // white-space: nowrap;
-  border-spacing: 0px 15px;
+  border-spacing: 5px 15px;
   border-collapse: separate;
 
   td,
@@ -15,6 +13,14 @@ table.schedule {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  th.week-num {
+    text-align: center;
+  }
+
+  .holiday {
+    filter: saturate(.1);
   }
 
    th.day {
@@ -26,152 +32,75 @@ table.schedule {
      background-color: $brand-accent-1;
      font-size: small;
      text-align: center;
-     border: 1px solid black;
+     border: 1px solid transparentize($brand-accent-1, .75);
      width: 5%;
      position: relative;
-     left: 10px;
+     padding: 5px;
    }
 
    td.class {
-     border: 1px solid black;
+     border: 1px solid transparentize($brand-accent-1, .75);
      width: 30%;
+     position: relative;
+     left: -5px;
+     padding: 7px 10px;
+
+        h1.title {
+          font-size: 1.1 * $font-size-base;
+          margin: 0;
+        }
+
+        h2.subtitle {
+          font-size: $font-size-sm;
+          margin: 0;
+          font-style: italic;
+        }
+
+        ul.materials {
+          margin: 0;
+          margin-top: 5px;
+          font-size: $font-size-xs;
+          font-style: italic;
+        }
+
+        ul.materials li {
+          // margin: 0;
+          display: inline;
+        }
+
    }
 
    td.assignment {
-     width: 25%;
-   }
+    dl {
+      margin: 10px 0;
+      border-left: 2px solid $brand-accent-1;
+      padding: 3px 7px;
 
-   h1.title {
-     font-size: 1.5em;
-     margin: 0;
-   }
+      dt {
+        line-height: 1.1;
+        margin: 0;
+        margin-top: 7px;
+      }
 
-   h2.subtitle {
-     font-size: .75em;
-     margin: 0;
-     font-style: italic;
-   }
+      dd {
+        margin: 0;
+      }
 
-   ul.materials {
-     margin: 0;
-     margin-top: 2px;
-     font-size: .75em;
-     font-style: italic;
-   }
+      .dueDate {
+        font-size: $font-size-sm;
+        font-style: italic;
+      }
 
-   ul.materials li {
-     margin: 0;
-     display: inline;
-   }
+      p {
+        margin: 0;
+        padding: 0;
+        display: inline;
+      }
 
-   td.assignment dl {
-     margin: 0;
-     border-left: 1px solid;
-     padding-left: 5px;
-   }
-
-
-  // margin: auto;
-  // width: 100%;
-  // border-spacing: 5px 15px;
-  // border-collapse: separate;
-
-  // thead {
-  //   font-weight: bold;
-  //   th {
-  //       text-align: center;
-  //   }
-  //   th.assignment {
-  //     text-align: left;
-  //   }
-  // }
-
-  // tr.week {
-  //   td {
-  //     padding: 0;
-  //   }
-
-  //   th.week-num {
-  //     width: 5%;
-  //     font-weight: normal;
-  //     text-align: center;
-  //   }
-
-  //   td.day, td.holiday {
-  //     border: 1px solid transparentize($highlight-color, .75);
-
-  //     div.day-details {
-  //       display: flex;
-  //       align-content: stretch;
-
-  //       div.date {
-  //         @extend .valign-wrapper;
-  //         color: white;
-  //         background-color: $highlight-color;
-  //         padding: 5px 10px;
-  //         text-align: center;
-  //         font-size: small;
-  //         display: inline-flex;
-  //         flex-grow: 1;
-  //         max-width: 20%;
-  //       }
-
-  //       div.contents {
-  //         @include line-lists;
-  //         flex-grow: 1;
-  //         margin-left: 10px;
-  //         padding: 10px;
-
-  //         h1 {
-  //           font-size: 1em;
-  //           margin: 0;
-  //           // color: $highlight-color;
-  //           // font-weight: bold;
-  //         }
-
-  //         h2 {
-  //           font-size: .75em;
-  //           margin: 0;
-  //           color: $dark-gray;
-  //           font-style: italic;
-  //         }
-
-  //         ul.materials {
-  //           font-size: .75em;
-  //           margin: 0;
-  //           padding-top: 5px;
-  //           font-style: italic;
-  //           min-height: 1.75em;
-  //         }
-  //       }
-  //     }
-  //   }
-
-  //   td.holiday {
-  //     filter: saturate(.1);
-  //   }
-
-  //   td.assignment {
-  //     @include clean-dl;
-
-  //     width: 25%;
-  //     padding-left: 1%;
-
-  //     dl {
-  //       margin: 0;
-  //       dd {
-  //         font-size: small;
-  //         font-style: italic;
-  //         margin-bottom: 7px;
-  //         span.dueDate, span.date {
-  //           p { // the markdownified due date
-  //             display: inline;
-  //           }
-  //         }
-  //       }
-  //       border-left: 2px solid transparentize($highlight-color, .2);
-  //       padding-left: 10px;
-  //     }
-  //   }
-  // }
+      .dueDate {
+        font-size: $font-size-sm;
+        font-style: italic;
+      }
+    }    
+  }
 }
