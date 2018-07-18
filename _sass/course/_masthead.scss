@@ -1,6 +1,5 @@
 div.masthead {
-    @extend %card;
-    @include line-lists;
+    // @include line-lists;
 
     padding-top: 0;
     padding-bottom: 0;
@@ -11,7 +10,7 @@ div.masthead {
         font-weight: 700;
 
         a {
-            color: $highlight-color;
+            color: $brand-accent-2;
         }
 
         a:hover {
