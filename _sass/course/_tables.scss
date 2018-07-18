@@ -5,8 +5,34 @@
 // TODO: set breakpoints for widths on responsive tables?
 
 table.schedule {
-  @extend .borderless;
-  background-color: red;
+  // @extend .borderless;
+  // white-space: nowrap;
+  border-spacing: 0px 15px;
+  border-collapse: separate;
+
+  td,
+  th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+   th.day {
+     text-align: center;
+   }
+
+   td.date {
+     color: white;
+     background-color: $brand-accent-1;
+     font-size: small;
+     text-align: center;
+     border: 1px solid black;
+     min-width: 5%;
+     width: 5%;
+     position: relative;
+     left: 10px;
+   }
+
 
   // margin: auto;
   // width: 100%;
