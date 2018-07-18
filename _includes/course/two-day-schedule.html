@@ -5,7 +5,7 @@
     <thead role="rowgroup">
         <tr role="row">
             <th scope="col" role="columnheader">Week</th>        
-            <!-- TODO: Dynamically determine the days -->
+            <!-- TODO: Dynamically determine the names of the days -->
             <th scope="col" role="columnheader" class="day" colspan="2">Tuesday</th>
             <th scope="col" role="columnheader" class="day" colspan="2">Thursday</th>
             <th scope="col" role="columnheader" class="assignment">Assignment</th>
@@ -19,9 +19,9 @@
                 {% for class in week.classes %}
                     <!-- TODO: holidays -->
                     <td class="date">{{ class.date }}</td>
-                    <td class="contents">
-                        <h1>{{ class.title }}</h1>
-                        <h2>{{ class.subtitle }}</h2>
+                    <td class="class">
+                        <h1 class="title">{{ class.title }}</h1>
+                        <h2 class="subtitle">{{ class.subtitle }}</h2>
                         <ul class="materials">
                         {% for material in class.materials %}
                             <li>
@@ -39,6 +39,7 @@
                 {% endfor %}
 
                 <td role="cell" class="assignment">
+                    <!-- TODO: create list only if there is an assignment -->
                     <dl>
                         {% for assignment in week.assignments %}
                             <dt>
