@@ -4,10 +4,10 @@
     <!-- <caption>"Schedule"</caption> -->
     <thead role="rowgroup">
         <tr role="row">
-            <th scope="col" role="columnheader">Week</th>
+            <th scope="col" role="columnheader">Week</th>        
             <!-- TODO: Dynamically determine the days -->
-            <th scope="col" role="columnheader" class="day">Tuesday</th>
-            <th scope="col" role="columnheader" class="day">Thursday</th>
+            <th scope="col" role="columnheader" class="day" colspan="2">Tuesday</th>
+            <th scope="col" role="columnheader" class="day" colspan="2">Thursday</th>
             <th scope="col" role="columnheader" class="assignment">Assignment</th>
         </tr>
     </thead>
@@ -17,31 +17,24 @@
                 <th scope="row" role="rowheader" class="week-num">{{ week.number }}</th>
 
                 {% for class in week.classes %}
-                    {% if class.holiday %}
-                        <td role="cell" class="holiday">
-                    {% else %}
-                        <td role="cell" class="day">
-                    {% endif %}
-                        <div class="day-details">
-                            <div class="date">{{ class.date }}</div>
-                            <div class="contents">
-                                    <h1>{{ class.title }}</h1>
-                                    <h2>{{ class.subtitle }}</h2>
-                                    <ul class="materials">
-                                    {% for material in class.materials %}
-                                        <li>
-                                            {% if material.link %}
-                                                <a href="{{material.link}}">
-                                            {% endif %}
-                                            {{material.title}}
-                                            {% if material.link %}
-                                                </a>
-                                            {% endif %}
-                                        </li>
-                                    {% endfor %}
-                                    </ul>                                
-                            </div>
-                        </div>
+                    //TODO: holidays
+                    <td class="date">{{ class.date }}</td>
+                    <td class="contents">
+                        <h1>{{ class.title }}</h1>
+                        <h2>{{ class.subtitle }}</h2>
+                        <ul class="materials">
+                        {% for material in class.materials %}
+                            <li>
+                                {% if material.link %}
+                                    <a href="{{material.link}}">
+                                {% endif %}
+                                {{material.title}}
+                                {% if material.link %}
+                                    </a>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                        </ul>                                
                     </td>
                 {% endfor %}
 

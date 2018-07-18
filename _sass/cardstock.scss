@@ -1,16 +1,13 @@
-/* Vendors */
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-
 /* Variables */
 @import "cardstock/variables";
-@import "my-variables";
+
+/* Vendors */
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 /* Common styles */
 @import "cardstock/common";
 // @import "cardstock/util";
 
 /* Course styles */
-// @import "course/tables";
-// @import "course/masthead";
-
-// @import "my-styles";
+@import "course/tables";
+@import "course/masthead";

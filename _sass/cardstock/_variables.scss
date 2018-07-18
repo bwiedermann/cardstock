@@ -1,27 +1,27 @@
-// Assumes Bootstrap is present
-
 /*******************************************************************************
  * Colors
  *******************************************************************************/
-$brand-lightest: #FFFFFF;
-$brand-light: #FFFFF2;
-$brand-accent-1: #990576;
-$brand-accent-2: #057699;
-$brand-dark: $gray-dark;
-$brand-darkest: #000000;
+$brand-lightest: #FFFFFF !default;
+$brand-light:    #FFFFF2 !default;
+$brand-accent-1: #057699 !default;
+$brand-accent-2: #990000 !default;
+$brand-dark:     #292b2c !default;
+$brand-darkest:  #000000 !default;
 
 $body-background: $brand-light !default;
 $content-background: $brand-lightest !default;
-$section-border-color: $card-border-color;
+$section-border-color: rgba(#000000, .125) !default;;
 
 /*******************************************************************************
  * Links
  *******************************************************************************/
 
-$link-color: $brand-accent-1 !default;
+$link-color: $brand-accent-2 !default;
 $link-decoration : underline !default;
+
+$link-visited-color: $link-color !default;
 
 /*******************************************************************************
  * Typography
  *******************************************************************************/
-$font-family-base : $font-family-serif !default;
+$font-family-base: Georgia, "Times New Roman", Times, serif !default;

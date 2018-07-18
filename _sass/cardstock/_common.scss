@@ -1,6 +1,5 @@
 body {
   @extend .container;
-  @extend .row;
   background-color: $body-background;
   font-family: $font-family-base;
 }
@@ -9,11 +8,73 @@ body {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
   border: 1px solid $section-border-color;
   padding: 20px;
-  margin: 20px;
+  margin: 15px 0;
   background-color: $content-background;  
 }
 
 main, header, section {
   @extend .raised-section;
-  @extend .row
+  @extend .table-responsive;
 }
+
+/*******************************************************************************
+ * Links
+ *******************************************************************************/
+a:visited {
+  color: $link-visited-color;
+}
+
+/******************************************************************************
+* Table of contents
+******************************************************************************/
+
+// .toc {
+//     .nav__title {
+//         background-color: $info-color;
+//     }
+// }
+/******************************************************************************
+* Font awesome icons
+******************************************************************************/
+
+// @mixin colorful-icons {
+//     .fa-info-circle {
+//         color: $info-color;
+//     }
+//     .fa-bookmark {
+//         color: $danger-color;
+//     }
+//     .fa-github {
+//         color: $github-color;
+//     }
+//     .fa-graduation-cap {
+//         color: $schoology-color;
+//     }
+// }
+/******************************************************************************
+* Masthead
+******************************************************************************/
+
+// #site-nav {
+//     @include colorful-icons();
+// }
+// .masthead {
+//     ul {
+//         font-size: smaller;        
+//     }
+// }
+/******************************************************************************
+* Footer
+******************************************************************************/
+
+// .page__footer {
+//     display: none;
+// }
+/* right-hand nav */
+
+// make it sticky
+// aside.sidebar__right {
+//     position: sticky;
+//     float: right;
+//     top: 44px;
+// }

@@ -1,113 +1,140 @@
-/* ==========================================================================
-   TABLES
-   ========================================================================== */
+/*******************************************************************************
+ * Tables
+ *******************************************************************************/
 
-// TODO: set breakpoints for widths on responsive tables
+// TODO: set breakpoints for widths on responsive tables?
 
 table.schedule {
-  @extend .responsive-table;
-
-  margin: auto;
-  width: 100%;
-  border-spacing: 5px 15px;
+  // @extend .borderless;
+  // white-space: nowrap;
+  border-spacing: 0px 15px;
   border-collapse: separate;
 
-  thead {
-    font-weight: bold;
-    th {
-        text-align: center;
-    }
-    th.assignment {
-      text-align: left;
-    }
+  td,
+  th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  tr.week {
-    td {
-      padding: 0;
-    }
+   th.day {
+     text-align: center;
+   }
 
-    th.week-num {
-      width: 5%;
-      font-weight: normal;
-      text-align: center;
-    }
+   td.date {
+     color: white;
+     background-color: $brand-accent-1;
+     font-size: small;
+     text-align: center;
+     border: 1px solid black;
+     min-width: 5%;
+     width: 5%;
+     position: relative;
+     left: 10px;
+   }
 
-    td.day, td.holiday {
-      border: 1px solid transparentize($highlight-color, .75);
 
-      div.day-details {
-        display: flex;
-        align-content: stretch;
+  // margin: auto;
+  // width: 100%;
+  // border-spacing: 5px 15px;
+  // border-collapse: separate;
 
-        div.date {
-          @extend .valign-wrapper;
-          color: white;
-          background-color: $highlight-color;
-          padding: 5px 10px;
-          text-align: center;
-          font-size: small;
-          display: inline-flex;
-          flex-grow: 1;
-          max-width: 20%;
-        }
+  // thead {
+  //   font-weight: bold;
+  //   th {
+  //       text-align: center;
+  //   }
+  //   th.assignment {
+  //     text-align: left;
+  //   }
+  // }
 
-        div.contents {
-          @include line-lists;
-          flex-grow: 1;
-          margin-left: 10px;
-          padding: 10px;
+  // tr.week {
+  //   td {
+  //     padding: 0;
+  //   }
 
-          h1 {
-            font-size: 1em;
-            margin: 0;
-            // color: $highlight-color;
-            // font-weight: bold;
-          }
+  //   th.week-num {
+  //     width: 5%;
+  //     font-weight: normal;
+  //     text-align: center;
+  //   }
 
-          h2 {
-            font-size: .75em;
-            margin: 0;
-            color: $dark-gray;
-            font-style: italic;
-          }
+  //   td.day, td.holiday {
+  //     border: 1px solid transparentize($highlight-color, .75);
 
-          ul.materials {
-            font-size: .75em;
-            margin: 0;
-            padding-top: 5px;
-            font-style: italic;
-            min-height: 1.75em;
-          }
-        }
-      }
-    }
+  //     div.day-details {
+  //       display: flex;
+  //       align-content: stretch;
 
-    td.holiday {
-      filter: saturate(.1);
-    }
+  //       div.date {
+  //         @extend .valign-wrapper;
+  //         color: white;
+  //         background-color: $highlight-color;
+  //         padding: 5px 10px;
+  //         text-align: center;
+  //         font-size: small;
+  //         display: inline-flex;
+  //         flex-grow: 1;
+  //         max-width: 20%;
+  //       }
 
-    td.assignment {
-      @include clean-dl;
+  //       div.contents {
+  //         @include line-lists;
+  //         flex-grow: 1;
+  //         margin-left: 10px;
+  //         padding: 10px;
 
-      width: 25%;
-      padding-left: 1%;
+  //         h1 {
+  //           font-size: 1em;
+  //           margin: 0;
+  //           // color: $highlight-color;
+  //           // font-weight: bold;
+  //         }
 
-      dl {
-        margin: 0;
-        dd {
-          font-size: small;
-          font-style: italic;
-          margin-bottom: 7px;
-          span.dueDate, span.date {
-            p { // the markdownified due date
-              display: inline;
-            }
-          }
-        }
-        border-left: 2px solid transparentize($highlight-color, .2);
-        padding-left: 10px;
-      }
-    }
-  }
+  //         h2 {
+  //           font-size: .75em;
+  //           margin: 0;
+  //           color: $dark-gray;
+  //           font-style: italic;
+  //         }
+
+  //         ul.materials {
+  //           font-size: .75em;
+  //           margin: 0;
+  //           padding-top: 5px;
+  //           font-style: italic;
+  //           min-height: 1.75em;
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   td.holiday {
+  //     filter: saturate(.1);
+  //   }
+
+  //   td.assignment {
+  //     @include clean-dl;
+
+  //     width: 25%;
+  //     padding-left: 1%;
+
+  //     dl {
+  //       margin: 0;
+  //       dd {
+  //         font-size: small;
+  //         font-style: italic;
+  //         margin-bottom: 7px;
+  //         span.dueDate, span.date {
+  //           p { // the markdownified due date
+  //             display: inline;
+  //           }
+  //         }
+  //       }
+  //       border-left: 2px solid transparentize($highlight-color, .2);
+  //       padding-left: 10px;
+  //     }
+  //   }
+  // }
 }
