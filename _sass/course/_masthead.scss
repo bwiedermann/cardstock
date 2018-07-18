@@ -6,11 +6,8 @@ div.masthead {
     text-align: center;
 
     h1 {
-        font-size: 2.3em;
-        font-weight: 700;
-
         a {
-            color: $brand-accent-2;
+            color: $brand-accent-1;
         }
 
         a:hover {
@@ -19,8 +16,8 @@ div.masthead {
     }
 
     h2 {
-        font-size: 1.5em;
-        color: #6d6d6d;
+        font-size: $font-size-lg;
+        color: $gray-light;
     }
 
     ul {

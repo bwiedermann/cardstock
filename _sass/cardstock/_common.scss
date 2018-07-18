@@ -1,6 +1,5 @@
 body {
-  // @extend .container;
-  // @extend .row;
+  @extend .container;
   background-color: $body-background;
   font-family: $font-family-base;
 }
@@ -9,14 +8,12 @@ body {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
   border: 1px solid $section-border-color;
   padding: 20px;
-  width: 70%;
-  margin: 10px auto;
+  margin: 15px 0;
   background-color: $content-background;  
 }
 
 main, header, section {
-  // @extend .raised-section;
-  // @extend .row
+  @extend .raised-section;
 }
 
 /*******************************************************************************
