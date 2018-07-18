@@ -27,10 +27,47 @@ table.schedule {
      font-size: small;
      text-align: center;
      border: 1px solid black;
-     min-width: 5%;
      width: 5%;
      position: relative;
      left: 10px;
+   }
+
+   td.class {
+     border: 1px solid black;
+     width: 30%;
+   }
+
+   td.assignment {
+     width: 25%;
+   }
+
+   h1.title {
+     font-size: 1.5em;
+     margin: 0;
+   }
+
+   h2.subtitle {
+     font-size: .75em;
+     margin: 0;
+     font-style: italic;
+   }
+
+   ul.materials {
+     margin: 0;
+     margin-top: 2px;
+     font-size: .75em;
+     font-style: italic;
+   }
+
+   ul.materials li {
+     margin: 0;
+     display: inline;
+   }
+
+   td.assignment dl {
+     margin: 0;
+     border-left: 1px solid;
+     padding-left: 5px;
    }
 
 
