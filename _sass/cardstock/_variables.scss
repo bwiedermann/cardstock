@@ -18,6 +18,7 @@ $section-border-color: rgba(#000000, .125) !default;;
 
 $link-color: $brand-accent-2 !default;
 $link-decoration : underline !default;
+$link-hover-color : lighten($link-color, 15%) !default;
 
 $link-visited-color: $link-color !default;
 
