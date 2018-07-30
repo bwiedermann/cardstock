@@ -14,7 +14,7 @@ ul.clean-ul {
     padding: 0;
 
     li {
-      padding: 0
+      margin: 0 0 .5em 0;
     }
   }
 }
@@ -87,7 +87,8 @@ ul.clean-ul {
   }
 
   li + li::before {
-    content: "\00a0\2219\00a0";
+    padding: 0 .5em;
+    content: "\2219";
   }
 }
 
