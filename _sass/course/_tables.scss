@@ -56,16 +56,13 @@ table.schedule {
           font-style: italic;
         }
 
+        @include line-lists;
+
         ul.materials {
           margin: 0;
           margin-top: 5px;
           font-size: $font-size-xs;
           font-style: italic;
-        }
-
-        ul.materials li {
-          // margin: 0;
-          display: inline;
         }
 
    }
