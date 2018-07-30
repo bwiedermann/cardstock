@@ -40,30 +40,32 @@
 
                 <td role="cell" class="assignment">
                     <!-- TODO: create list only if there is an assignment -->
-                    <dl>
-                        {% for assignment in week.assignments %}
-                            <dt>
-                                {% if assignment.url %}
-                                    <a href="{{ assignment.url }}">
-                                {% endif %}
-                                {{  assignment.title }}
-                                {% if assignment.url %}
-                                    </a>
-                                {% endif %}
-                            </dt>
-                            <dd>
-                                {% if assignment.dueDate or assignment.date %}
-                                    <span class="dueDate">
-                                        {% if assignment.dueDate %}
-                                            Due: {{ assignment.dueDate | markdownify }}
-                                        {% else %} 
-                                            {{ assignment.date | markdownify }}
-                                        {% endif %}
-                                    </span>
-                                {% endif %}
-                            </dd>
-                        {% endfor %}
-                    </dl>
+                    {% if week.assignments.size > 0 %}
+                        <dl>
+                            {% for assignment in week.assignments %}
+                                <dt>
+                                    {% if assignment.url %}
+                                        <a href="{{ assignment.url }}">
+                                    {% endif %}
+                                    {{  assignment.title }}
+                                    {% if assignment.url %}
+                                        </a>
+                                    {% endif %}
+                                </dt>
+                                <dd>
+                                    {% if assignment.dueDate or assignment.date %}
+                                        <span class="dueDate">
+                                            {% if assignment.dueDate %}
+                                                Due: {{ assignment.dueDate | markdownify }}
+                                            {% else %} 
+                                                {{ assignment.date | markdownify }}
+                                            {% endif %}
+                                        </span>
+                                    {% endif %}
+                                </dd>
+                            {% endfor %}
+                        </dl>
+                    {% endif %}
                 </td>
             </tr>
         {% endfor %}
