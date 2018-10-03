@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "bootstrap": "4.1.2",
-    "materialize-sass": "^0.98.2"
+    "bootstrap": "^4.1.3"
   }
 }
