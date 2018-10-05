@@ -29,7 +29,7 @@ table.schedule {
 
    td.date {
      color: white;
-     background-color: $brand-accent-1;
+     background-color: darken($brand-accent-1, 7);
      font-size: small;
      text-align: center;
      border: 1px solid transparentize($brand-accent-1, .75);
