@@ -5,9 +5,17 @@
     <thead role="rowgroup">
         <tr role="row">
             <th scope="col" role="columnheader">Week</th>        
-            <!-- TODO: Dynamically determine the names of the days -->
-            <th scope="col" role="columnheader" class="day" colspan="2">Tuesday</th>
-            <th scope="col" role="columnheader" class="day" colspan="2">Thursday</th>
+            <!-- Dynamically determine the names of the days -->
+            {% assign days = site.data.course.days %}
+            {% if days == 'TTh' %}
+                {% assign day1 = 'Tuesday' %}
+                {% assign day2 = 'Thursday' %}
+            {% elsif days == 'MW' %}
+                {% assign day1 = 'Monday' %}
+                {% assign day2 = 'Wednesday' %}
+            {% endif %}
+            <th scope="col" role="columnheader" class="day" colspan="2">{{day1}}</th>
+            <th scope="col" role="columnheader" class="day" colspan="2">{{day2}}</th>
             <th scope="col" role="columnheader" class="assignment">Assignment</th>
         </tr>
     </thead>
